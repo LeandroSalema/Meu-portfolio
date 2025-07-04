@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meu Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Leandro Ferreira Salema da Silva</h1>
+    <nav>
+      <button onclick="mostrar('inicio')">Início</button>
+      <button onclick="mostrar('sobre')">Sobre</button>
+      <button onclick="mostrar('formacao')">Formação</button>
+      <button onclick="mostrar('projetos')">Projetos</button>
+      <button onclick="mostrar('contato')">Contato</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="visivel"><br><br><br>
+
+      <h1>Bem-vindo ao meu portfólio!</h1>
+      <p>Olá! Bem-vindo ao meu portfólio, um espaço onde compartilho meus projetos, habilidades e aprendizados. Aqui, você encontrará um pouco do meu trabalho e minha evolução na vida profissional.</p>
+    </section>
+
+    
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Me chamo Leandro Ferreira Salema da Silva, natural de Cubatão-SP. No momento estou em transição de carreira, migranda da area do transporte para a area da tecnologia. No momento estou cursando meu primeiro semestre no curso de analise e desenvolvimento de sistema. Sou curioso e gosto de estar sempre aprendendo coisas novas. Entre as coisas que mais gosto de fazer no meu tempo livre, é jogar bola, video game e ter um tempo de qualidade com minha familia e amigos, que são os que me trazem alegria e leveza no meu dia-a-dia.</p>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação</h2>
+      <ul>
+        <li></strong> Ensino medio completo</li>
+        <li><strong>Cursando:</strong> Analise e desenvolvimento de sistemas</li>
+        <li><strong>Instituição:</strong>Centro universitario internacional Uninter</li>
+        <li><strong>Idiomas:</strong> Português </li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <ul>
+        <li>Hamburgueria - <a href="https://leandrosalema.github.io/burguer-prime/" target="_blank">Burguer-Prime</a></li>
+        
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Fale Comigo</h2>
+      <form onsubmit="enviarMensagem(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 - Desenvolvido por Leandro Ferreira</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
